@@ -1,9 +1,63 @@
 /*
 Theme Name: zl-web
 Theme URI: http://ideal-zlin.cz/
-Author: VAclav Cerny & Simon Barak
+Author: Vaclav Cerny & Simon Barak
 Description: New theme
 Version: 0.1
 Text Domain: zl-web
-
 */
+
+/*reset*/
+body{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
+
+/*header section */
+#header{margin-right:25px;margin-left:25px;border-bottom:gray solid thin;height:50px;}
+#logo_top{width:205px;height:50px;background-image:url(img/logo_top.svg);float:left;}
+#nav_top,#search_top{ width:50px;height:50px;float:right;}
+#nav_top{background-image:url(img/nav.svg);}
+#search_top{background-image:url(img/search.svg);}
+/*navigator section */
+#navigator{clear:both;height:30px;border-bottom:gray solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
+#navigator_ab,#navigator_cd,#navigator_a,#navigator_b,#navigator_c,#navigator_d{width:24.5%;float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px;padding-top:3px; padding-left:25px;}
+#navigator_a,#navigator_b,#navigator_c,#navigator_ab{border-right:gray solid 1px;}
+#navigator_ab,#navigator_cd{width:49%;}
+/* main content part */
+#main{clear:both;}
+#content{
+padding:0px 0px 0px 0px;border:thin solid red;
+margin-right:25px;margin-left:25px;
+
+ background: linear-gradient(to right, 
+                                transparent 0%, 
+                                transparent 25px,
+	                            gray 26px, 
+                                transparent 26px,
+                             
+                                  transparent calc(25% - 12.5px), 
+	                              gray calc(25% - 12.5px), 
+	                              gray calc(25% - 11.5px), 
+	                              transparent calc(25% - 11.5px), 
+                             
+	                              transparent calc(50% - 0.5px), 
+	                              gray calc(50% - 0.5px), 
+	                              gray calc(50% + 0.5px), 
+	                              transparent calc(50% + 0.5px), 
+                             
+                                  transparent calc(75% + 12.5px), 
+	                              gray calc(75% + 12.5px), 
+	                              gray calc(75% + 13.5px), 
+	                              transparent calc(75% + 13.5px), 
+                           
+                            
+                             
+	                              transparent calc(100% - 25px),
+                                  gray calc(100% - 25px),
+                                  gray calc(100% - 24px),
+                                  transparent calc(100% - 24px),
+                                transparent 100%
+     
+     
+); 
+	}
+
+/* footer part.*/
