@@ -32,8 +32,12 @@ html,body{height: 100%;  margin: 0; }
 #navigator_a,#navigator_b,#navigator_c,#navigator_ab{border-right:gray solid 1px;}
 #navigator_ab,#navigator_cd{width:49.8%;}
 /* main content part */
-#logo_left{width:105px;height:50px;background-image:url(img/logo_left.svg);margin-left:auto; margin-right:0; margin-top:150px;}
-#logo_right{width:100px;height:50px;background-image:url(img/logo_right.svg); margin-top:150px;}
+#logo_left{width:105px;height:50px;background-image:url(img/logo_left.svg);margin-left:auto; margin-right:0; margin-top:150px;margin-bottom:150px}
+#logo_right{width:100px;height:50px;background-image:url(img/logo_right.svg); margin-top:150px;margin-bottom:150px;}
+
+
+#left_up_inner,#right_up_inner{width:20px;height:20px;background-image:url(img/up.svg);margin-left:auto; margin-right:auto;}
+
 
 
 #main{clear:both;margin-left:25px;margin-right:25px;height:100%;overflow:hidden;}
