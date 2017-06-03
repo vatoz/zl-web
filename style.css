@@ -9,10 +9,22 @@ Text Domain: zl-web
 
 /*reset*/
 body{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
-
+/*font*/
+@font-face {
+  font-family: 'basic';
+  src: url('font/basic.eot'); /* IE9 Compat Modes */
+  src: url('font/basic.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('font/basic.woff2') format('woff2'), /* Super Modern Browsers */
+       url('font/basic.woff') format('woff'), /* Pretty Modern Browsers */       
+       url('font/basic.otf') format('otf')
+       url('font/basic.svg#Knuckle') format('svg'); /* Legacy iOS */       
+}
+body {
+  font-family: 'basic',  sans-serif;
+}
 /*obecne*/
-h1{font-size:36px;text-align:center;margin-bottom:50px;}
-p{font-size:18px;margin-bottom:40px;}
+h1{font-family: 'basic',  sans-serif;font-size:36px;text-align:center;margin-bottom:50px;}
+p{font-family: 'basic',  sans-serif;font-size:18px;margin-bottom:40px;}
 html,body{height: 100%;  margin: 0; }
 #page{display:flex;flex-flow: column;height: 100%;margin:0;}
 #header_part{flex: 0 1 auto;}
