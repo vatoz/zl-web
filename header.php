@@ -17,7 +17,7 @@
 <body <?php body_class(); ?>>
 
 <div id="page">
-
+<div id="header_part">
 <div id="header" role="banner">
 		<a id=logo_icon href="<?php echo home_url(); ?>/" ><div  id=logo_top ></div></a>
 		<!-- todo search and local menu
@@ -26,9 +26,12 @@
 		-->
 </div>
 <div id=navigator>
-    <div id=navigator_a>Menu</div>
-    <div id=navigator_b>výstupy</div>
-    <div id=navigator_cd>výstupy nápady a koniny</div>
+    <div id=navigator2>
+        <div id=navigator_a>Menu</div>
+        <div id=navigator_b>výstupy</div>
+        <div id=navigator_cd>výstupy nápady a koniny</div>
+    </div>
+</div>
 </div>
 
 <!-- eof header-->
