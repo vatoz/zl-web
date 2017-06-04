@@ -3,6 +3,7 @@ Theme Name: zl-web
 Theme URI: http://ideal-zlin.cz/
 Author: Vaclav Cerny & Simon Barak
 Description: New theme
+Github Theme URI: https://github.com/vatoz/zl-web
 Version: 0.1
 Text Domain: zl-web
 */
@@ -22,27 +23,88 @@ body{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
 body {
   font-family: 'basic',  sans-serif;
 }
+
+
 /*obecne*/
 h1{font-family: 'basic',  sans-serif;font-size:36px;text-align:center;margin-bottom:50px;}
 p{font-family: 'basic',  sans-serif;font-size:18px;margin-bottom:40px;}
 html,body{height: 100%;  margin: 0; }
-#page{display:flex;flex-flow: column;height: 100%;margin:0;}
+#page{display:flex;flex-flow: column;height: 100%;margin:0;
+    
+    background: linear-gradient(to right, 
+        transparent 0%, 
+        
+        transparent calc(25px), 
+        gray calc(25px), 
+        gray calc(26px), 
+        transparent calc(26px), 
+
+        transparent calc(25% + 12.5px), 
+        gray calc(25% + 12.5px), 
+        gray calc(25% + 13.5px), 
+        transparent calc(25% + 13.5px), 
+
+        transparent calc(50% - 0.5px), 
+        gray calc(50% - 0.5px), 
+        gray calc(50% + 0.5px), 
+        transparent calc(50% + 0.5px), 
+
+        transparent calc(75% - 13.5px), 
+        gray calc(75% - 13.5px), 
+        gray calc(75% - 12.5px), 
+        transparent calc(75% - 12.5px),   
+
+        transparent calc(100% - 26px), 
+        gray calc(100% - 26px), 
+        gray calc(100% - 25px), 
+        transparent calc(100% - 25px), 
+
+        transparent 100%
+);     
+}
+
 #header_part{flex: 0 1 auto;}
 #main{flex: 1 1 auto;}
 
 
 /*header section */
-#header{margin-right:25px;margin-left:25px;border-bottom:gray solid thin;height:50px;}
+#header{margin-right:25px;margin-left:25px;border-bottom:gray solid thin;height:50px;background-color:white;}
 #logo_top{width:205px;height:50px;background-image:url(img/logo_top.svg);float:left;}
 #nav_top,#search_top{ width:50px;height:50px;float:right;}
 #nav_top{background-image:url(img/nav.svg);}
 #search_top{background-image:url(img/search.svg);}
+
 /*navigator section */
 #navigator{clear:both;height:30px;border-bottom:gray solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
 #navigator2{margin-left:25px;margin-right:25px;}
-#navigator_ab,#navigator_cd,#navigator_a,#navigator_b,#navigator_c,#navigator_d{width:24.8%;float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px; padding-left:5px;padding-top:10px; }
-#navigator_a,#navigator_b,#navigator_c,#navigator_ab{border-right:gray solid 1px;}
+#navigator_ab,#navigator_cd,#navigator_a_text,#navigator_b,#navigator_c,#navigator_d{width:24.7%;float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px;margin-left:5px;margin-top:3px; }
 #navigator_ab,#navigator_cd{width:49.8%;}
+
+
+/*menu*/
+#navigator_a{position:relative;}
+.menu{display: none;width:25%;padding-top:30px;}
+#navigator_a:hover .menu{display:block;position:absolute;}
+.menu ul{
+    display:block;
+    
+    border-bottom: thin solid gray;
+    border-left: thin solid gray;
+    margin:0 0 0 0;
+    padding:0 0 0 0;
+}
+.menu  li{
+    display:block;
+    height:60px;  
+    text-align:center;
+    font-size:40px;padding:0 0 0 0;
+    background-color:white;
+}
+.menu li:hover{background-color:yellow;}
+.menu ul li ul {display:none;}
+.menu ul li:hover ul {display:block;position:absolute;top:30px;left:100%;}
+.menu a{text-decoration:none;color:black;border:none;margin-top:5px;}
+
 /* main content part */
 #logo_left{width:105px;height:50px;background-image:url(img/logo_left.svg);margin-left:auto; margin-right:0; margin-top:150px;margin-bottom:150px}
 #logo_right{width:100px;height:50px;background-image:url(img/logo_right.svg); margin-top:150px;margin-bottom:150px;}
@@ -55,37 +117,18 @@ html,body{height: 100%;  margin: 0; }
 #main{clear:both;margin-left:25px;margin-right:25px;height:100%;overflow:hidden;}
 #main2{width:100%; height:100%;overflow: hidden;}
 
-#rightbox{width:49.8%;float:right;
-   padding:0px 0px 0px 0px;
-    
+#rightbox{width:49.99%;float:right;
+   padding:0px 0px 0px 0px;    
 }
 #content{
-
-width:49.8%;float:left;
+width:49.99%;float:left;
 padding:0px 0px 0px 0px;
-border-right:1px solid gray;
 }
-#content, #rightbox{
-    
+
+
+#content, #rightbox{    
     height: 100%;
     overflow:auto;
-    
-    
-background: linear-gradient(to right, 
-                                transparent 0%, 
-                                
-                             
-	                              transparent calc(50% - 0.7px), 
-	                              gray calc(50% - 0.7px), 
-	                              gray calc(50% + 0.7px), 
-	                              transparent calc(50% + 0.7px), 
-                             
-                                
-                                transparent 100%
-     
-     
-); 
-    
 }
 
 /* footer part.*/

@@ -9,7 +9,7 @@
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-
+<?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), 1, true); ?>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <?php wp_head(); ?>
@@ -27,7 +27,11 @@
 </div>
 <div id=navigator>
     <div id=navigator2>
-        <div id=navigator_a>Menu</div>
+        
+        <div id=navigator_a>
+        <div id=navigator_a_text>Menu</div>
+        <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+        </div>
         <div id=navigator_b>výstupy</div>
         <div id=navigator_cd>výstupy nápady a koniny</div>
     </div>

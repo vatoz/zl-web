@@ -3,22 +3,26 @@
     <div id="main">
     <div id=main2>
     <div id="content">
-    
+        
      <a id=logo_icon_left href="<?php echo home_url(); ?>/" ><div  id=logo_left ></div></a>
      <div id=left_up><div id=left_up_inner></div></div>
-    
+    <div id=leftcontent>
+    <!--leftcontent-->
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <h1><?php the_title(); ?></h1>
     <h4>Posted on <?php the_time('F jS, Y') ?></h4>
     <p><?php the_content(__('(more...)')); ?></p>
-    <hr> <?php endwhile; else: ?>
+     <?php endwhile; else: ?>
     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
+    <!--eofleftcontent-->
+    </div>
     </div>
     <div id=rightbox>
 <div>    
 
     <a id=logo_icon_right href="<?php echo home_url(); ?>/" ><div  id=logo_right ></div></a>
     <div id=right_up><div id=right_up_inner></div></div>
+    <div id=rightcontent>
     <h1>Rightside</h1>
 <p>6Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce luctus ipsum id nibh ultricies, id condimentum velit commodo. Fusce consequat augue luctus, vestibulum ante eu, tristique sapien. Nam eu tincidunt elit, non venenatis lorem. Etiam laoreet magna tellus, at ultrices tellus cursus non. Duis malesuada felis nec orci tempor, non semper lacus semper. Donec non dapibus nunc, vel fringilla sapien. Vivamus fermentum accumsan turpis. Fusce sagittis eros lacinia, lobortis mi ac, semper augue. Integer ut suscipit nunc. Cras in ultrices ex, hendrerit tempus nulla. Nullam sollicitudin tristique sapien quis euismod. Nunc mollis eget nisl ac iaculis. Quisque porttitor placerat dui nec pellentesque. Vivamus rhoncus nunc eu eros volutpat, vel tempus magna efficitur. Proin rutrum erat at tellus egestas pulvinar. Nam ac lacus rhoncus nisl condimentum lacinia.
 </p><p>
@@ -34,7 +38,7 @@
 1In id lacinia ipsum. Aenean dictum nisl et molestie scelerisque. Curabitur vitae consequat sapien. Vivamus mollis consectetur purus id tincidunt. Donec tristique libero sit amet eros porta suscipit. Ut tristique nunc at urna mollis commodo. Phasellus consectetur fermentum maximus. Cras suscipit felis non ante aliquet, id ultrices dui pretium. Mauris id placerat mauris. Nunc accumsan ipsum vitae tellus iaculis porttitor. Mauris lacinia ac purus vel elementum. Integer aliquet tellus at commodo pulvinar. 
     </p>
     </div>
-    
+    </div>
     </div>
     
     </div>
