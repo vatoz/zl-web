@@ -140,3 +140,6 @@ padding:0px 0px 0px 0px;
 img:hover {
         filter:hue-rotate(180deg);
 }
+
+/*bugy*/
+.page-item-72 {display:none;}
