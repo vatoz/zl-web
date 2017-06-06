@@ -114,9 +114,14 @@ html,body{height: 100%;  margin: 0; }
 #rightbox{width:49.99%;float:right;
    padding:0px 0px 0px 0px;    
 }
-#rightbox2{
+
+#leftcontent{
+  padding-right:20px;
+}
+#rightcontent{
   padding-left:20px;
 }
+
 #content{
 width:49.99%;float:left;
 padding:0px 0px 0px 0px;
