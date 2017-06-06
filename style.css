@@ -101,7 +101,7 @@ html,body{height: 100%;  margin: 0; }
 
 /* main content part */
 #logo_left{width:105px;height:50px;background-image:url(img/logo_left.svg);margin-left:auto; margin-right:0; margin-top:150px;margin-bottom:150px}
-#logo_right{width:100px;height:50px;background-image:url(img/logo_right.svg); margin-top:150px;margin-bottom:150px;}
+#logo_right{width:100px;height:50px;background-image:url(img/logo_right.svg); margin-top:150px;margin-bottom:150px;padding-left:-10px;}
 
 
 #left_up_inner,#right_up_inner{width:20px;height:20px;background-image:url(img/up.svg);margin-left:auto; margin-right:auto;}
@@ -109,10 +109,13 @@ html,body{height: 100%;  margin: 0; }
 
 
 #main{clear:both;margin-left:25px;margin-right:25px;height:100%;overflow:hidden;}
-#main2{width:100%; height:100%;overflow: hidden;}
+#main2{width:100%; height:100%;overflow: hidden;padding-right:20px;}
 
 #rightbox{width:49.99%;float:right;
    padding:0px 0px 0px 0px;    
+}
+#rightbox2{
+  padding-left:20px;
 }
 #content{
 width:49.99%;float:left;
