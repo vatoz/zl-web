@@ -143,3 +143,6 @@ img:hover {
 
 /*bugy*/
 .page-item-72 {display:none;}
+::-webkit-scrollbar { 
+    display: none; 
+}
