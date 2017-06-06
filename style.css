@@ -34,10 +34,7 @@ html,body{height: 100%;  margin: 0; }
     background: linear-gradient(to right, 
         transparent 0%, 
         
-        transparent calc(25px), 
-        gray calc(25px), 
-        gray calc(26px), 
-        transparent calc(26px), 
+       
 
         transparent calc(25% + 12.5px), 
         gray calc(25% + 12.5px), 
@@ -54,10 +51,7 @@ html,body{height: 100%;  margin: 0; }
         gray calc(75% - 12.5px), 
         transparent calc(75% - 12.5px),   
 
-        transparent calc(100% - 26px), 
-        gray calc(100% - 26px), 
-        gray calc(100% - 25px), 
-        transparent calc(100% - 25px), 
+        
 
         transparent 100%
 );     
