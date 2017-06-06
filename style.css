@@ -91,7 +91,7 @@ html,body{height: 100%;  margin: 0; }
     display:block;
     height:50px;  
     text-align:center;
-    font-size:40px;padding:0 0 0 0;
+    font-size:36px;padding:0 0 0 0;
     background-color:white;
 }
 .menu li:hover{background-color:yellow;}
