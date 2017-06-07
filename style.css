@@ -161,7 +161,7 @@ img:hover {
 .paragraph_front_overlay_half{height:75px;                      
                         background-image:url(img/front_fade_half.png);width:100%;}
 .paragraph_front_half p{
-display:block;height:75px;padding-top:-75px;width:100%;
+display:block;height:75px;margin-top:-75px;width:100%;
 }
 
 
