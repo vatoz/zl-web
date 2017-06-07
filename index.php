@@ -22,8 +22,7 @@
     <a id=logo_icon_right href="<?php echo home_url(); ?>/" ><div  id=logo_right ></div></a>
     <div id=right_up><div id=right_up_inner></div></div>
     <div id=rightcontent>
-    <h1>Doprovodné informace</h1>
-    
+     
     <?php if ( is_active_sidebar( 'rightdefault' ) ) : ?>
 	<div id="primary-sidebar" class="primary-sidebar widget-area" role="complementary">
 		<?php dynamic_sidebar( 'rightdefault' ); ?>
