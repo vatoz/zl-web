@@ -34,8 +34,7 @@ html,body{height: 100%;  margin: 0; }
     background: linear-gradient(to right, 
         transparent 0%, 
         
-       
-
+     
         transparent calc(25% + 12.5px), 
         gray calc(25% + 12.5px), 
         gray calc(25% + 13.5px), 
@@ -148,4 +147,5 @@ img:hover {
 ::-webkit-scrollbar { 
     display: none; 
 }
-h4{display:none;}
+
+
