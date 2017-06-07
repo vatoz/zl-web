@@ -149,3 +149,15 @@ img:hover {
 }
 
 
+/*front*/
+.paragraph_front{height:150px;overflow:hidden;margin-bottom:1em;}
+
+.paragraph_front_overlay{position:absolute;height:150px;
+                        
+                        background-image:url(img/front_fade.png);width:48%;}
+.paragrraph_front p{}
+
+
+.paragraph_front_overlay_auto{position:absolute;height:150px;
+                        
+                        background-image:url(img/front_fade.png);width:100%;}

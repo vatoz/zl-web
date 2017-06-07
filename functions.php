@@ -12,4 +12,21 @@ function zl_web_widgets_init() {
 	) );
 
 }
+
+function zl_web_front($atts,$content=null){
+    echo $content."  <br>  ";
+    $content=  str_replace("<p", "<div class=paragraph_front><div class=paragraph_front_overlay></div><p", $content);
+    if(isset($atts["href"])){
+    $content=  str_replace("</p>", "</p></div><a class=front_more href='".$atts["href"]."' >Číst dál</a>", $content);
+        
+    }else{
+    $content=  str_replace("</p>", "</p></div>", $content);
+        
+    }
+    echo $content;
+    
+}
+
 add_action( 'widgets_init', 'zl_web_widgets_init' );
+
+add_shortcode( 'zlin_front' , 'zl_web_front' );
