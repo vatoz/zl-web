@@ -158,8 +158,11 @@ img:hover {
 
 
 .paragraph_front_half{height:75px;overflow:hidden;margin-bottom:1em;}
-.paragraph_front_overlay_half{position:relative;height:75px;                      
-                        background-image:url(img/front_fade_half.png);width:48%;}
+.paragraph_front_overlay_half{height:75px;                      
+                        background-image:url(img/front_fade_half.png);width:100%;}
+.paragraph_front_half p{
+display:block;height:75px;padding-top:-75px;width:100%;
+}
 
 
 
