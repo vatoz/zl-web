@@ -152,13 +152,13 @@ img:hover {
 /*front*/
 .paragraph_front{height:150px;overflow:hidden;margin-bottom:1em;}
 
-.paragraph_front_overlay{position:absolute;height:150px;                      
+.paragraph_front_overlay{position:relative;height:150px;                      
                         background-image:url(img/front_fade.png);width:48%;}
 .front_more{color:black;font-decoration:none;}
 
 
 .paragraph_front_half{height:75px;overflow:hidden;margin-bottom:1em;}
-.paragraph_front_overlay_half{position:absolute;height:75px;                      
+.paragraph_front_overlay_half{position:relative;height:75px;                      
                         background-image:url(img/front_fade_half.png);width:48%;}
 
 
