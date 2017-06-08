@@ -57,3 +57,23 @@ jQuery(document).ready(function(){
         }                   
     });
 });
+
+function Unfade(id){
+    jQuery("#overlay_"+id).fadeTo(30,0,function(){
+        jQuery("#overlay_"+id).remove();
+        jQuery("#content_"+id).css("margin-top",0);
+        jQuery("#fade_"+id).animate(
+                {
+                height:"300px",
+                
+                 
+                },250,function(){
+        jQuery("#fade_"+id).replaceWith(jQuery("#content_"+id).html() );
+                   jQuery("#hide_"+id).remove(); 
+                }
+                )
+        
+        
+    });
+    
+}

@@ -13,20 +13,41 @@ function zl_web_widgets_init() {
 
 }
 
-function zl_web_front($atts,$content=null){
-    
-    $content=  str_replace("<p", "<div class=paragraph_front><div class=paragraph_front_overlay></div><p", $content);
-    if(isset($atts["href"])){
-    $content=  str_replace("</p>", "</p></div><a class=front_more href='".$atts["href"]."' >Číst dál</a>", $content);
-        
-    }else{
-    $content=  str_replace("</p>", "</p></div>", $content);
-        
-    }
-    echo $content;
-    
+function zl_web_long($atts,$content=null){
+    $t=  rand(1999, 10000000);
+    return "<div id=fade_".$t." class=paragraph_front>".
+            "<div id=overlay_".$t." class=paragraph_front_overlay></div>".
+     "<div id=content_".$t." class=paragraph_front_content>".
+
+     $content.
+     "</div>".
+            "</div>"
+            . "<a id=hide_".$t." class=front_more href='#' onclick='Unfade(".$t.")'>Číst dál...</a>".
+     "\n";
 }
 
-add_action( 'widgets_init', 'zl_web_widgets_init' );
+function zl_web_logo_left(){
+    return '<a id=logo_icon_left href="'. home_url(). '" ><div  id=logo_left ></div></a>
+     <div id=left_up><div id=left_up_inner></div></div>';
+}
+function zl_web_logo_right(){
+    return '<a id=logo_icon_right href="'. home_url(). '" ><div  id=logo_right ></div></a>
+     <div id=right_up><div id=right_up_inner></div></div>';
+}
+function zl_web_sloupec(){
+return '
+    </div>
+    </div>
+    <div id=rightbox>
+    <div id="rightbox2">';    
 
-add_shortcode( 'zlin_front' , 'zl_web_front' );
+}
+add_action( 'widgets_init', 'zl_web_widgets_init' );
+add_shortcode( 'zlin_long' , 'zl_web_long' );
+add_shortcode( 'zlin_logo_leve' , 'zl_web_logo_left' );
+add_shortcode( 'zlin_logo_prave' , 'zl_web_logo_right' );
+add_shortcode( 'zlin_sloupec' , 'zl_web_sloupec' );
+
+
+remove_filter("the_content","wpautop");
+remove_filter("the_excerpt","wpautop");
