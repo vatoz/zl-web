@@ -76,8 +76,8 @@ html,body{height: 100%;  margin: 0; }
 
 /*menu*/
 #navigator_a{position:relative;}
-.menu{display: none;width:25%;padding-top:30px;}
-#navigator_a:hover .menu{display:block;position:absolute;}
+.menu{display: none;width:25%;padding-top:30px;position:absolute;}
+#navigator_a:hover .menu{display:block;}
 .menu ul{
     display:block;
     

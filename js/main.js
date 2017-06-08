@@ -26,8 +26,13 @@ function loadTo(href,right){
 }
 
 
+function ShowMenu(){
+    jQuery("div.menu").css("display","block");
+    return false;
+}
+
+
 function isLocal(href){
-    console.log(href);
     if(href.indexOf("zlin.cz")>0) return true;
     if(href.indexOf("j.ntm.cz")>0) return true;
     if(href.indexOf("localhost")>0) return true;
@@ -39,6 +44,7 @@ jQuery(document).ready(function(){
         href=jQuery(this).attr('href');        
         if( isLocal(href)){
             loadTo(href,true);
+            jQuery("div.menu").css("display","none");
             return false;            
         }                   
     });
@@ -46,7 +52,8 @@ jQuery(document).ready(function(){
         href=jQuery(this).attr('href');
         if( isLocal(href)){
             loadTo(href,false);
-            return false;            
+            jQuery("div.menu").css("display","none");
+           return false;            
         }                   
     });
 });
