@@ -3,6 +3,7 @@
     <div id="main">
     <div id=main2>
     <div id="content">
+         <div id="content2">
         
      <a id=logo_icon_left href="<?php echo home_url(); ?>/" ><div  id=logo_left ></div></a>
      <div id=left_up><div id=left_up_inner></div></div>
@@ -14,10 +15,10 @@
      <?php endwhile; else: ?>
     <p><?php _e('Sorry, no posts matched your criteria.'); ?></p><?php endif; ?>
     <!--eofleftcontent-->
-    </div>
+    </div></div>
     </div>
     <div id=rightbox>
-<div>    
+<div id="rightbox2">    
 
     <a id=logo_icon_right href="<?php echo home_url(); ?>/" ><div  id=logo_right ></div></a>
     <div id=right_up><div id=right_up_inner></div></div>
