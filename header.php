@@ -34,8 +34,8 @@
         <div id=navigator_a_text>Menu</div>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </div>
-        <div id=navigator_b>výstupy</div>
-        <div id=navigator_cd>výstupy nápady a koniny</div>
+        <div id=navigator_b></div>
+        <div id=navigator_cd></div>
     </div>
 </div>
 </div>
