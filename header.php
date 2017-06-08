@@ -21,9 +21,10 @@
 <div id="header" role="banner">
 		<a id=logo_icon href="<?php echo home_url(); ?>/" ><div  id=logo_top ></div></a>
 	
+                <!-- todo search and local menu
+                
                 <a id=menu_icon onclick="ShowMenu()" href='#' ><div  id=nav_top ></div></a>
 		
-                <!-- todo search and local menu
 		<a id=search_icon  href="<?php echo home_url(); ?>/" ><div  id=search_top ></div></a>
 		-->
 </div>
