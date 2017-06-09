@@ -76,17 +76,19 @@ html,body{height: 100%;  margin: 0; }
 
 /*menu*/
 #navigator_a{position:relative;}
-.menu{display: none;width:25%;padding-top:30px;position:absolute;}
-#navigator_a:hover .menu{display:block;}
-.menu ul{
+.menu,.menu0{display: none;width:25%;padding-top:30px;position:absolute;}
+.menu{left:25%;}
+#navigator_a:hover .menu
+,#navigator_a:hover .menu0{display:block;}
+.menu ul,.menu0 ul{
+    z-index:120;
     display:block;
     
-    border-bottom: thin solid gray;
-    border-left: thin solid gray;
+    border: thin solid gray;
     margin:0 0 0 0;
     padding:0 0 0 0;
 }
-.menu  li{
+.menu  li,.menu0 li{
     display:block;
     height:50px;  
     text-align:center;
@@ -94,9 +96,10 @@ html,body{height: 100%;  margin: 0; }
     background-color:white;
 }
 .menu li:hover{background-color:yellow;}
+
 .menu ul li ul {display:none;}
 .menu ul li:hover ul {display:block;position:absolute;top:30px;left:100%;}
-.menu a{text-decoration:none;color:black;border:none;margin-top:5px;}
+.menu0 a,.menu a{text-decoration:none;color:black;border:none;margin-top:5px;}
 
 /* main content part */
 #logo_left{width:105px;height:50px;background-image:url(img/logo_left.svg);margin-left:auto; margin-right:0; margin-top:150px;margin-bottom:150px}
@@ -152,12 +155,12 @@ img:hover {
 /*front*/
 .paragraph_front{height:150px;overflow:hidden;margin:0 0 0 0;width:100%;}
 
-.paragraph_front_overlay{position:relative;height:150px;         z-index:10;             
+.paragraph_front_overlay{position:relative;height:150px;         z-index:-1;             
                         background-image:url(img/front_fade.png);width:100%;}
 .paragraph_front_content{position:relative;
-display:block;margin-top:-150px;width:100%; z-index:1;
+display:block;margin-top:-150px;width:100%; z-index:-2;
 }
 .front_more{color:black;text-decoration:none;}
 .paragraph_front_content p:first-child{margin-top:0px; }
 
-
+.yellow{background-color:yellow;}

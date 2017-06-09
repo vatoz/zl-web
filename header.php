@@ -33,6 +33,15 @@
         
         <div id=navigator_a>
         <div id=navigator_a_text>Menu</div>
+        <div class=menu0>
+        <ul>
+        <li><a href="<?php echo home_url(); ?>#o-projektu">O projektu</a></li> 
+        <li><a href="<?php echo home_url(); ?>#kontakt">Kontakt</a></li>
+        <li><a href="<?php echo home_url(); ?>#nas-tym">Náš tým</a></li>
+        <li><a href="<?php echo home_url(); ?>#odkazy">Odkazy</a></li>
+        </ul>
+        
+        </div>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
         </div>
         <div id=navigator_b></div>

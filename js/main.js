@@ -1,18 +1,21 @@
-function loadTo(href,right){
+function loadTo(href,left){
    jQuery.ajax({
     url: href,
     dataTyp:"html"  
 }).done(function(result) {
-    if(right){
-              target="#rightcontent";
+    if(left){
+              target="#content2";
             }else{
-                target="#leftcontent";    
+                target="#rightbox2";    
             }
-    start=result.indexOf("<!--leftcontent-->");
-    end=result.indexOf("<!--eofleftcontent-->");
+    start=result.indexOf("<!--content-->");
+    end=result.indexOf("<!--eofcontent-->");
     if(start>0){
         if(end>start){            
-                jQuery(target).html(result.substr(start+19, end-19-start   ));            
+                jQuery(target).html(result.substr(start+15, end-15-start   ));
+                if(!left){
+                  jQuery(target).addClass("yellow");
+                }            
         }else{
             return false;                  
         }
@@ -40,19 +43,11 @@ function isLocal(href){
 }
 
 jQuery(document).ready(function(){
-    jQuery("#content a").live('click',function(e){       
-        href=jQuery(this).attr('href');        
-        if( isLocal(href)){
-            loadTo(href,true);
-            jQuery("div.menu").css("display","none");
-            return false;            
-        }                   
-    });
-   jQuery("#rightbox a,.menu a").live('click',function(e){       
+   jQuery(".menu a").live('hover',function(e){       
         href=jQuery(this).attr('href');
+        console.log(href);
         if( isLocal(href)){
             loadTo(href,false);
-            jQuery("div.menu").css("display","none");
            return false;            
         }                   
     });
