@@ -51,6 +51,12 @@ jQuery(document).ready(function(){
            return false;            
         }                   
     });
+    
+     jQuery(".menu a").live('click',function(e){       
+        
+           return false;            
+                           
+    });
 });
 
 function Unfade(id){
