@@ -62,10 +62,10 @@ html,body{height: 100%;  margin: 0; }
 
 /*header section */
 #header{margin-right:25px;margin-left:25px;border-bottom:gray solid thin;height:50px;background-color:white;}
-#logo_top{width:205px;height:50px;background-image:url(img/logo_top.svg);float:left;}
+#logo_top{height:40px;background-image:url(img/logo_top.png);float:left;}
 #nav_top,#search_top{ width:50px;height:50px;float:right;}
-#nav_top{background-image:url(img/nav.svg);}
-#search_top{background-image:url(img/search.svg);}
+#nav_top{background-image:url(img/nav.png);}
+#search_top{background-image:url(img/search.png);}
 
 /*navigator section */
 #navigator{clear:both;height:30px;border-bottom:gray solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
@@ -102,11 +102,11 @@ html,body{height: 100%;  margin: 0; }
 .menu0 a,.menu a{text-decoration:none;color:black;border:none;margin-top:5px;}
 
 /* main content part */
-#logo_left{width:105px;height:50px;background-image:url(img/logo_left.svg);margin-left:auto; margin-right:0; margin-top:150px;margin-bottom:150px}
-#logo_right{width:100px;height:50px;background-image:url(img/logo_right.svg); margin-top:150px;margin-bottom:150px;padding-left:-10px;}
+#logo_left{height:250px;background-image:url(img/logo_left.png);margin-left:auto; margin-right:0; margin-top:150px;margin-bottom:150px}
+#logo_right{height:250px;background-image:url(img/logo_right.png); margin-top:150px;margin-bottom:150px;padding-left:-10px;}
 
 
-#left_up_inner,#right_up_inner{width:20px;height:20px;background-image:url(img/up.svg);margin-left:auto; margin-right:auto;}
+#left_up_inner,#right_up_inner{width:20px;height:20px;background-image:url(img/up.png);margin-left:auto; margin-right:auto;}
 
 
 
