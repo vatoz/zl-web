@@ -19,7 +19,10 @@
 <div id="page">
 <div id="header_part">
 <div id="header" role="banner">
-		<a id=logo_icon href="<?php echo home_url(); ?>/" ><div  id=logo_top ></div></a>
+		<a id=logo_icon href="<?php echo home_url(); ?>/" ><img  id=logo_top 
+    src="<?php echo  get_template_directory_uri(); ?>/img/logo_top.png"
+    
+    ></a>
 	
                 <!-- todo search and local menu
   

@@ -27,11 +27,12 @@ function zl_web_long($atts,$content=null){
 }
 
 function zl_web_logo_left(){
-    return '<a id=logo_icon_left href="'. home_url(). '" ><div  id=logo_left ></div></a>
+    return '<a id=logo_icon_left href="'. home_url(). '" ><IMG src="'.get_template_directory_uri().'/img/logo_left.png"
+      id=logo_left ></a>
      <div id=left_up><div id=left_up_inner></div></div>';
 }
 function zl_web_logo_right(){
-    return '<a id=logo_icon_right href="'. home_url(). '" ><div  id=logo_right ></div></a>
+    return '<a id=logo_icon_right href="'. home_url(). '" ><img  id=logo_right src="'.get_template_directory_uri().'/img/logo_right.png"></a>
      <div id=right_up><div id=right_up_inner></div></div>';
 }
 function zl_web_sloupec(){
