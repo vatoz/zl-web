@@ -29,32 +29,7 @@ body{padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
 h1{font-size:36px;text-align:center;margin-bottom:50px;}
 p{font-size:18px;margin-bottom:40px;}
 html,body{height: 100%;  margin: 0; }
-#page{display:flex;flex-flow: column;height: 100%;margin:0;
-    
-    background: linear-gradient(to right, 
-        transparent 0%, 
-        
-     
-        transparent calc(25% + 12.5px), 
-        gray calc(25% + 12.5px), 
-        gray calc(25% + 13.5px), 
-        transparent calc(25% + 13.5px), 
-
-        transparent calc(50% - 0.5px), 
-        gray calc(50% - 0.5px), 
-        gray calc(50% + 0.5px), 
-        transparent calc(50% + 0.5px), 
-
-        transparent calc(75% - 13.5px), 
-        gray calc(75% - 13.5px), 
-        gray calc(75% - 12.5px), 
-        transparent calc(75% - 12.5px),   
-
-        
-
-        transparent 100%
-);     
-}
+#page{display:flex;flex-flow: column;height: 100%;margin:0;}
 
 #header_part{flex: 0 1 auto;margin-bottom:0px;}
 #main{flex: 1 1 auto;margin-top:0px;}
@@ -166,3 +141,19 @@ display:block;margin-top:-150px;width:100%; z-index:-2;
 
 .yellow{background-color:#ffffbe;}
 .imgcaption{color:gray;}
+
+
+/*Lines*/
+.line{
+    position:absolute;
+    z-index:-1;
+    top:25px;
+    height:100%;
+    width:1px;
+    background-color:grey;
+    margin: 0 0 0 0;padding: 0 0 0 0;
+}
+#sep_a{left:calc( 25% + 12px); }
+
+#sep_b{left: 50% ; }
+#sep_c{left:calc( 75% - 12px); }

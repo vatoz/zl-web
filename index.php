@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<div id="sep_a"  class="line"></div><div id="sep_b"  class="line"></div><div id="sep_c"  class="line"></div>
     <div id="main">
     <div id=main2>
     <div id="content">
