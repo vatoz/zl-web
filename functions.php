@@ -10,6 +10,7 @@ function zl_web_widgets_init() {
 		'before_title'  => '',
 		'after_title'   => '',
 	) );
+        register_nav_menu("primary","Hlavní Zlín");
 
 }
 
@@ -44,11 +45,11 @@ return '
 
 }
 add_action( 'widgets_init', 'zl_web_widgets_init' );
+
 add_shortcode( 'zlin_long' , 'zl_web_long' );
 add_shortcode( 'zlin_logo_leve' , 'zl_web_logo_left' );
 add_shortcode( 'zlin_logo_prave' , 'zl_web_logo_right' );
 add_shortcode( 'zlin_sloupec' , 'zl_web_sloupec' );
-
 
 remove_filter("the_content","wpautop");
 remove_filter("the_excerpt","wpautop");
