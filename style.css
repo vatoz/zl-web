@@ -77,7 +77,7 @@ html,body{height: 100%;  margin: 0; }
 /*menu*/
 #navigator_a{position:relative;}
 .menu,.menu0{display: none;width:25%;padding-top:30px;position:absolute;}
-.menu{left:25%;}
+.menu{left:25%;z-index:120;}
 #navigator_a:hover .menu
 ,#navigator_a:hover .menu0{display:block;}
 .menu ul,.menu0 ul{
@@ -95,7 +95,7 @@ html,body{height: 100%;  margin: 0; }
     font-size:36px;padding:0 0 0 0;
     background-color:white;
 }
-.menu li:hover{background-color:yellow;}
+.menu li:hover{background-color:#ffffbe;}
 
 .menu ul li ul {display:none;}
 .menu ul li:hover ul {display:block;position:absolute;top:30px;left:100%;}
@@ -165,5 +165,5 @@ display:block;margin-top:-150px;width:100%; z-index:-2;
 .front_more{color:black;text-decoration:none;}
 .paragraph_front_content p:first-child{margin-top:0px; }
 
-.yellow{background-color:yellow;}
+.yellow{background-color:#ffffbe;}
 .imgcaption{color:gray;}
