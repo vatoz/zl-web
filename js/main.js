@@ -14,7 +14,7 @@ function loadTo(href,left){
         if(end>start){            
                 jQuery(target).html(result.substr(start+15, end-15-start   ));
                 if(!left){
-                  jQuery(target).addClass("yellow");
+                  jQuery("#rightbox").addClass("yellow");
                 }            
         }else{
             return false;                  

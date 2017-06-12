@@ -22,9 +22,7 @@
 		<a id=logo_icon href="<?php echo home_url(); ?>/" ><img  id=logo_top 
     src="<?php echo  get_template_directory_uri(); ?>/img/logo_top.png"
     
-    ></a>
-	
-                <!-- todo search and local menu
+    ></a>                <!-- todo search and local menu
   
                 <a id=menu_icon onclick="ShowMenu()" href='#' ><div  id=nav_top ></div></a>
 		
@@ -36,7 +34,9 @@
         
         <div id=navigator_a>
         <div id=navigator_a_text>Menu</div>
-        <div class=menu0>
+        </div>
+        <div id=navigator_b>Výstupy</div>
+     <div class=menu0>
         <ul>
         <li><a href="<?php echo home_url(); ?>#o-projektu">O projektu</a></li> 
         <li><a href="<?php echo home_url(); ?>#kontakt">Kontakt</a></li>
@@ -46,9 +46,7 @@
         
         </div>
         <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
-        </div>
-        <div id=navigator_b></div>
-        <div id=navigator_cd></div>
+        
     </div>
 </div>
 </div>
