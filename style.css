@@ -36,14 +36,14 @@ html,body{height: 100%;  margin: 0; }
 
 
 /*header section */
-#header{margin-right:0px;margin-left:0px;border-bottom:gray solid thin;height:50px;background-color:white;}
+#header{margin-right:0px;margin-left:0px;border-bottom:lightgrey solid thin;height:50px;background-color:white;}
 #logo_top{height:40px;float:left;margin-left:25px;}
 #nav_top,#search_top{ width:50px;height:50px;float:right;}
 #nav_top{background-image:url(img/nav.png);}
 #search_top{background-image:url(img/search.png);}
 
 /*navigator section */
-#navigator{clear:both;height:30px;border-bottom:gray solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;padding-left:25px;padding-right:25px; }
+#navigator{clear:both;height:30px;border-bottom:lightgrey solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;padding-left:25px;padding-right:25px; }
 #navigator2{}
 #navigator_ab,#navigator_cd,#navigator_a,#navigator_b,#navigator_c,#navigator_d{
     width:24.9%;
@@ -62,7 +62,7 @@ html,body{height: 100%;  margin: 0; }
     z-index:120;
     display:block;
     
-    border: thin solid gray;
+    border: thin solid lightgrey;
     margin:0 0 0 0;
     padding:0 0 0 0;
 }
@@ -189,7 +189,7 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
 .paragraph_front_content p:first-child{margin-top:0px; }
 
 .yellow{background-color:#ffffbe;}
-.imgcaption{color:gray;}
+.imgcaption{color:lightgrey;}
 
 
 /*Lines*/
@@ -199,7 +199,7 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
     top:25px;
     height:100%;
     width:1px;
-    background-color:grey;
+    background-color:lightgrey;
     margin: 0 0 0 0;padding: 0 0 0 0;
 }
 #sep_a{left:calc( 25% + 12px); }
