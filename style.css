@@ -206,3 +206,4 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
 #sep_a{left:calc( 25% + 12px); }
 #sep_b{left: 50% ; }
 #sep_c{left:calc( 75% - 12px); }
+a{text-decoration:none;color:black;}
