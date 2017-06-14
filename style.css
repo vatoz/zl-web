@@ -43,18 +43,22 @@ html,body{height: 100%;  margin: 0; }
 #search_top{background-image:url(img/search.png);}
 
 /*navigator section */
-#navigator{clear:both;height:30px;border-bottom:gray solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;}
-#navigator2{margin-left:25px;margin-right:25px;}
-#navigator_ab,#navigator_cd,#navigator_a_text,#navigator_b,#navigator_c,#navigator_d{width:24.7%;float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px;margin-left:5px;margin-top:3px; }
+#navigator{clear:both;height:30px;border-bottom:gray solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;padding-left:25px;padding-right:25px; }
+#navigator2{}
+#navigator_ab,#navigator_cd,#navigator_a,#navigator_b,#navigator_c,#navigator_d{
+    width:24.9%;
+    float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px;padding-left:5px;margin-top:3px; }
 #navigator_ab,#navigator_cd{width:49.8%;}
 
 
 /*menu*/
-.menu,.menu0{display: none;width:25%;padding-top:30px;position:absolute;}
-.menu{left:25%;z-index:120;}
-#navigator2:hover .menu
+.menu-hlavni-container,.menu0{display: none;width: calc(25% - 13px) ;padding-top:30px;position:absolute;}
+.menu0{left:25px;z-index:120;}
+
+.menu-hlavni-container{right:50%;z-index:120;}
+#navigator2:hover .menu-hlavni-container
 ,#navigator2:hover .menu0{display:block;}
-.menu ul,.menu0 ul{
+.menu-hlavni-container ul,.menu0 ul{
     z-index:120;
     display:block;
     
@@ -62,7 +66,7 @@ html,body{height: 100%;  margin: 0; }
     margin:0 0 0 0;
     padding:0 0 0 0;
 }
-.menu  li,.menu0 li{
+.menu-hlavni-container  li,.menu0 li{
     display:block;
     height:50px;  
     text-align:center;
@@ -154,6 +158,5 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
     margin: 0 0 0 0;padding: 0 0 0 0;
 }
 #sep_a{left:calc( 25% + 12px); }
-
 #sep_b{left: 50% ; }
 #sep_c{left:calc( 75% - 12px); }

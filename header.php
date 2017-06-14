@@ -32,9 +32,7 @@
 <div id=navigator>
     <div id=navigator2>
         
-        <div id=navigator_a>
-        <div id=navigator_a_text>Menu</div>
-        </div>
+        <div id=navigator_a>Menu</div>
         <div id=navigator_b>Výstupy</div>
      <div class=menu0>
         <ul>
@@ -43,10 +41,8 @@
         <li><a href="<?php echo home_url(); ?>#nas-tym">Náš tým</a></li>
         <li><a href="<?php echo home_url(); ?>#odkazy">Odkazy</a></li>
         </ul>
-        
         </div>
-        <?php wp_nav_menu(  ); ?>
-        
+        <?php wp_nav_menu(  ); ?>        
     </div>
 </div>
 </div>
