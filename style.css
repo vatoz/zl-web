@@ -37,7 +37,7 @@ html,body{height: 100%;  margin: 0; }
 
 /*header section */
 #header{margin-right:0px;margin-left:0px;border-bottom:lightgrey solid thin;height:50px;background-color:white;}
-#logo_top{height:40px;float:left;margin-left:25px;}
+#logo_top{height:30px;margin-top:5px;float:left;margin-left:25px;}
 #nav_top,#search_top{ width:50px;height:50px;float:right;}
 #nav_top{background-image:url(img/nav.png);}
 #search_top{background-image:url(img/search.png);}
