@@ -27,22 +27,25 @@ function zl_web_long($atts,$content=null){
      "\n";
 }
 
+function zl_web_logo($left){
+    $side=($left?"left":"right");
+    return '<a class=inlogo  id=logo_icon_'.$side.' href="'. home_url(). '" ><IMG src="'.get_template_directory_uri().'/img/logo_'.$side.'.png"
+      id=logo_'.$side.' ></a>
+     <div id='.$side.'_down><img id='.$side.'_down_inner src="'.get_template_directory_uri().'/img/down.png"></div>';
+    
+}
 function zl_web_logo_left(){
-    return '<a class=inlogo  id=logo_icon_left href="'. home_url(). '" ><IMG src="'.get_template_directory_uri().'/img/logo_left.png"
-      id=logo_left ></a>
-     <div id=left_up><img id=left_up_inner src="'.get_template_directory_uri().'/img/up.png"></div>';
+    return zl_web_logo(true);
 }
 function zl_web_logo_right(){
-    return '<a id=logo_icon_right class=inlogo href="'. home_url(). '" ><img  id=logo_right src="'.get_template_directory_uri().'/img/logo_right.png"></a>
-     <div id=right_up><img id=right_up_inner src="'.get_template_directory_uri().'/img/up.png"></div>';
+    return zl_web_logo(false);
 }
 function zl_web_sloupec(){
 return '
     </div>
     </div>
     <div id=rightbox>
-    <div id="rightbox2">';    
-
+    <div id="rightbox2">';   
 }
 add_action( 'widgets_init', 'zl_web_widgets_init' );
 

@@ -43,17 +43,17 @@ html,body{height: 100%;  margin: 0; }
 #search_top{background-image:url(img/search.png);}
 
 /*navigator section */
-#navigator{clear:both;height:30px;border-bottom:lightgrey solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;padding-left:25px;padding-right:25px; }
+#navigator{clear:both;height:30px;border-bottom:lightgrey solid thin;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px; }
 #navigator2{}
 #navigator_ab,#navigator_cd,#navigator_a,#navigator_b,#navigator_c,#navigator_d{
     width:24.9%;
-    float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px;padding-left:5px;margin-top:3px; }
+    float:left;padding:0px 0px 0px 0px;margin:0px 0px 0px 0px;height:29px;margin-left:25px;margin-top:5px;}
 #navigator_ab,#navigator_cd{width:49.8%;}
 
 
 /*menu*/
-.menu-hlavni-container,.menu0{display: none;width: calc(25% - 13px) ;padding-top:30px;position:absolute;}
-.menu0{left:25px;z-index:120;}
+.menu-hlavni-container,.menu0{display: none;width: 25%  ;padding-top:30px;position:absolute;}
+.menu0{;z-index:120;}
 
 .menu-hlavni-container{right:50%;z-index:120;}
 #navigator2:hover .menu-hlavni-container
@@ -61,109 +61,137 @@ html,body{height: 100%;  margin: 0; }
 .menu-hlavni-container ul,.menu0 ul{
     z-index:120;
     display:block;
-    
     border: thin solid lightgrey;
     margin:0 0 0 0;
     padding:0 0 0 0;
 }
+
 .menu-hlavni-container  li,.menu0 li{
     display:block;
     height:70px;  
     font-size:36px;padding:0 0 0 0;
     background-color:white;
-    margin-top:5px;
-    margin-bottom:5px;
-    margin-left:5px;
+    padding-top:25px;
+    padding-bottom:5px;
+    padding-left:5px;
    
 }
+.menu0 ul{border-right:none;}
 .menu li:hover{background-color:#ffffbe;}
 
 .menu ul li ul {display:none;}
 .menu ul li:hover ul {display:block;position:absolute;top:30px;left:100%;}
-.menu0 a,.menu a{text-decoration:none;color:black;border:none;margin-top:5px;}
+.menu0 a,.menu a{text-decoration:none;color:black;border:none;margin-left:25px;}
 
 /* main content part */
-#logo_left{float:right;margin-left:auto; margin-right:-10px;}
-#logo_right{margin-left:-10px;}
+#logo_left{right:-25px}
+#logo_right{left:-25px;}
 
+.inlogo{display:block;position:relative;}
 .inlogo img{
     height:150px;width:315px;
-    margin-top:150px;margin-bottom:150px; 
+
+    position:absolute; top:50%; margin-top:-125px
 }
-                                           
-@media only screen and (max-height:2150px) {.inlogo img{margin-top:650px;margin-bottom: 650px;  height:650px;width:1365px;   }}
-@media only screen and (max-height:2100px) {.inlogo img{margin-top:633px;margin-bottom: 633px;  height:633px;width:1329px;   }}
-@media only screen and (max-height:2050px) {.inlogo img{margin-top:617px;margin-bottom: 617px;  height:617px;width:1296px;   }}
-@media only screen and (max-height:2000px) {.inlogo img{margin-top:600px;margin-bottom: 600px;  height:600px;width:1260px;   }}
-@media only screen and (max-height:1950px) {.inlogo img{margin-top:583px;margin-bottom: 583px;  height:583px;width:1224px;   }}
-@media only screen and (max-height:1900px) {.inlogo img{margin-top:567px;margin-bottom: 567px;  height:567px;width:1191px;   }}
-@media only screen and (max-height:1850px) {.inlogo img{margin-top:550px;margin-bottom: 550px;  height:550px;width:1155px;   }}
-@media only screen and (max-height:1800px) {.inlogo img{margin-top:533px;margin-bottom: 533px;  height:533px;width:1119px;   }}
-@media only screen and (max-height:1750px) {.inlogo img{margin-top:517px;margin-bottom: 517px;  height:517px;width:1086px;   }}
-@media only screen and (max-height:1700px) {.inlogo img{margin-top:500px;margin-bottom: 500px;  height:500px;width:1050px;   }}
-@media only screen and (max-height:1650px) {.inlogo img{margin-top:483px;margin-bottom: 483px;  height:483px;width:1014px;   }}
-@media only screen and (max-height:1600px) {.inlogo img{margin-top:467px;margin-bottom: 467px;  height:467px;width:981px;   }}
-@media only screen and (max-height:1550px) {.inlogo img{margin-top:450px;margin-bottom: 450px;  height:450px;width:945px;   }}
-@media only screen and (max-height:1500px) {.inlogo img{margin-top:433px;margin-bottom: 433px;  height:433px;width:909px;   }}
-@media only screen and (max-height:1450px) {.inlogo img{margin-top:417px;margin-bottom: 417px;  height:417px;width:876px;   }}
-@media only screen and (max-height:1400px) {.inlogo img{margin-top:400px;margin-bottom: 400px;  height:400px;width:840px;   }}
-@media only screen and (max-height:1350px) {.inlogo img{margin-top:383px;margin-bottom: 383px;  height:383px;width:804px;   }}
-@media only screen and (max-height:1300px) {.inlogo img{margin-top:367px;margin-bottom: 367px;  height:367px;width:771px;   }}
-@media only screen and (max-height:1250px) {.inlogo img{margin-top:350px;margin-bottom: 350px;  height:350px;width:735px;   }}
-@media only screen and (max-height:1200px) {.inlogo img{margin-top:333px;margin-bottom: 333px;  height:333px;width:699px;   }}
-@media only screen and (max-height:1150px) {.inlogo img{margin-top:317px;margin-bottom: 317px;  height:317px;width:666px;   }}
-@media only screen and (max-height:1100px) {.inlogo img{margin-top:300px;margin-bottom: 300px;  height:300px;width:630px;   }}
-@media only screen and (max-height:1050px) {.inlogo img{margin-top:283px;margin-bottom: 283px;  height:283px;width:594px;   }}
-@media only screen and (max-height:1000px) {.inlogo img{margin-top:267px;margin-bottom: 267px;  height:267px;width:561px;   }}
-@media only screen and (max-height:950px) {.inlogo img{margin-top:250px;margin-bottom: 250px;  height:250px;width:525px;   }}
-@media only screen and (max-height:900px) {.inlogo img{margin-top:233px;margin-bottom: 233px;  height:233px;width:489px;   }}
-@media only screen and (max-height:850px) {.inlogo img{margin-top:217px;margin-bottom: 217px;  height:217px;width:456px;   }}
-@media only screen and (max-height:800px) {.inlogo img{margin-top:200px;margin-bottom: 200px;  height:200px;width:420px;   }}
-@media only screen and (max-height:750px) {.inlogo img{margin-top:183px;margin-bottom: 183px;  height:183px;width:384px;   }}
-@media only screen and (max-height:700px) {.inlogo img{margin-top:167px;margin-bottom: 167px;  height:167px;width:351px;   }}
-@media only screen and (max-height:650px) {.inlogo img{margin-top:150px;margin-bottom: 150px;  height:150px;width:315px;   }}
-@media only screen and (max-height:600px) {.inlogo img{margin-top:133px;margin-bottom: 133px;  height:133px;width:279px;   }}
-@media only screen and (max-height:550px) {.inlogo img{margin-top:117px;margin-bottom: 117px;  height:117px;width:246px;   }}
-@media only screen and (max-height:500px) {.inlogo img{margin-top:100px;margin-bottom: 100px;  height:100px;width:210px;   }}
-@media only screen and (max-height:450px) {.inlogo img{margin-top:83px;margin-bottom: 83px;  height:83px;width:174px;   }}
-@media only screen and (max-height:400px) {.inlogo img{margin-top:67px;margin-bottom: 67px;  height:67px;width:141px;   }}
-@media only screen and (max-height:350px) {.inlogo img{margin-top:50px;margin-bottom: 50px;  height:50px;width:105px;   }}
-@media only screen and (max-height:300px) {.inlogo img{margin-top:33px;margin-bottom: 33px;  height:33px;width:69px;   }}
-@media only screen and (max-height:250px) {.inlogo img{margin-top:17px;margin-bottom: 17px;  height:17px;width:36px;   }}
+
+
+@media only screen and (max-height:2150px) {.inlogo {height:1950px;     }}
+@media only screen and (max-height:2100px) {.inlogo {height:1900px;     }}
+@media only screen and (max-height:2050px) {.inlogo {height:1850px;     }}
+@media only screen and (max-height:2000px) {.inlogo {height:1800px;     }}
+@media only screen and (max-height:1950px) {.inlogo {height:1750px;     }}
+@media only screen and (max-height:1900px) {.inlogo {height:1700px;     }}
+@media only screen and (max-height:1850px) {.inlogo {height:1650px;     }}
+@media only screen and (max-height:1800px) {.inlogo {height:1600px;     }}
+@media only screen and (max-height:1750px) {.inlogo {height:1550px;     }}
+@media only screen and (max-height:1700px) {.inlogo {height:1500px;     }}
+@media only screen and (max-height:1650px) {.inlogo {height:1450px;     }}
+@media only screen and (max-height:1600px) {.inlogo {height:1400px;     }}
+@media only screen and (max-height:1550px) {.inlogo {height:1350px;     }}
+@media only screen and (max-height:1500px) {.inlogo {height:1300px;     }}
+@media only screen and (max-height:1450px) {.inlogo {height:1250px;     }}
+@media only screen and (max-height:1400px) {.inlogo {height:1200px;     }}
+@media only screen and (max-height:1350px) {.inlogo {height:1150px;     }}
+@media only screen and (max-height:1300px) {.inlogo {height:1100px;     }}
+@media only screen and (max-height:1250px) {.inlogo {height:1050px;     }}
+@media only screen and (max-height:1200px) {.inlogo {height:1000px;     }}
+@media only screen and (max-height:1150px) {.inlogo {height:950px;     }}
+@media only screen and (max-height:1100px) {.inlogo {height:900px;     }}
+@media only screen and (max-height:1050px) {.inlogo {height:850px;     }}
+@media only screen and (max-height:1000px) {.inlogo {height:800px;     }}
+@media only screen and (max-height:950px) {.inlogo {height:750px;     }}
+@media only screen and (max-height:900px) {.inlogo {height:700px;     }}
+@media only screen and (max-height:850px) {.inlogo {height:650px;     }}
+@media only screen and (max-height:800px) {.inlogo {height:600px;     }}
+@media only screen and (max-height:750px) {.inlogo {height:550px;     }}
+@media only screen and (max-height:700px) {.inlogo {height:500px;     }}
+@media only screen and (max-height:650px) {.inlogo {height:450px;     }}
+@media only screen and (max-height:600px) {.inlogo {height:400px;     }}
+@media only screen and (max-height:550px) {.inlogo {height:350px;     }}
+@media only screen and (max-height:500px) {.inlogo {height:300px;     }}
+@media only screen and (max-height:450px) {.inlogo {height:250px;     }}
+@media only screen and (max-height:400px) {.inlogo {height:200px;     }}
+@media only screen and (max-height:350px) {.inlogo {height:150px;     }}
+@media only screen and (max-height:300px) {.inlogo {height:100px;     }}
+@media only screen and (max-height:250px) {.inlogo {height:50px;     }}
+
+
+@media only screen and (max-width:2150px) {.inlogo img {height:205px; width:430px;margin-top:-103px;    }}
+@media only screen and (max-width:2050px) {.inlogo img {height:195px; width:410px;margin-top:-98px;    }}
+@media only screen and (max-width:1950px) {.inlogo img {height:186px; width:390px;margin-top:-93px;    }}
+@media only screen and (max-width:1850px) {.inlogo img {height:176px; width:370px;margin-top:-88px;    }}
+@media only screen and (max-width:1750px) {.inlogo img {height:167px; width:350px;margin-top:-84px;    }}
+@media only screen and (max-width:1650px) {.inlogo img {height:157px; width:330px;margin-top:-79px;    }}
+@media only screen and (max-width:1550px) {.inlogo img {height:148px; width:310px;margin-top:-74px;    }}
+@media only screen and (max-width:1450px) {.inlogo img {height:138px; width:290px;margin-top:-69px;    }}
+@media only screen and (max-width:1350px) {.inlogo img {height:129px; width:270px;margin-top:-65px;    }}
+@media only screen and (max-width:1250px) {.inlogo img {height:119px; width:250px;margin-top:-60px;    }}
+@media only screen and (max-width:1150px) {.inlogo img {height:110px; width:230px;margin-top:-55px;    }}
+@media only screen and (max-width:1050px) {.inlogo img {height:100px; width:210px;margin-top:-50px;    }}
+@media only screen and (max-width:950px) {.inlogo img {height:90px; width:190px;margin-top:-45px;    }}
+@media only screen and (max-width:850px) {.inlogo img {height:81px; width:170px;margin-top:-41px;    }}
+@media only screen and (max-width:750px) {.inlogo img {height:71px; width:150px;margin-top:-36px;    }}
+@media only screen and (max-width:650px) {.inlogo img {height:62px; width:130px;margin-top:-31px;    }}
+@media only screen and (max-width:550px) {.inlogo img {height:52px; width:110px;margin-top:-26px;    }}
+@media only screen and (max-width:450px) {.inlogo img {height:43px; width:90px;margin-top:-22px;    }}
+@media only screen and (max-width:350px) {.inlogo img {height:33px; width:70px;margin-top:-17px;    }}
+@media only screen and (max-width:250px) {.inlogo img {height:24px; width:50px;margin-top:-12px;    }}
 
 
 
-#left_up_inner,#right_up_inner{
+#left_down_inner,#right_down_inner{
 clear:both;
-width:20px;height:20px;background-image:url(img/up.png);display:block;margin-left:auto; margin-right:auto;}
+width:20px;height:20px;background-image:url(img/down.png);display:block;margin-left:auto; margin-right:auto;}
 
 
 
-#main{clear:both;margin-left:25px;margin-right:25px;height:100%;overflow:hidden;}
-#main2{width:100%; height:100%;overflow: hidden;padding-right:20px;}
+#main{clear:both;height:100%;overflow:hidden;}
+#main2{width:100%; height:100%;overflow: hidden;}
 
 #rightbox{width:49.99%;float:right;
    padding:0px 0px 0px 0px;    
 }
 
-#main2{
-  padding-right:20px;
-}
-#rightbox2{
-  padding-left:20px;
-}
+
 
 #content{
-width:49.99%;float:left;
-padding:0px 0px 0px 0px;
+    width:49.99%;float:left;
+    padding:0px 0px 0px 0px;
 }
 
 
 #content, #rightbox{    
     height: 100%;
     overflow:auto;
+    
 }
 
+
+#content2, #rightbox2{    
+    margin-left:25px;
+    margin-right:25px;
+    
+}
 /* footer part.*/
 
 /* efekty */
@@ -206,8 +234,8 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
     background-color:lightgrey;
     margin: 0 0 0 0;padding: 0 0 0 0;
 }
-#sep_a{left:calc( 25% + 12px); }
+#sep_a{left: 25%; }
 #sep_b{left: 50% ; }
-#sep_c{left:calc( 75% - 12px); }
+#sep_c{left:75% ; }
 a{color:black;}
 .rok{font-size:90px;}
