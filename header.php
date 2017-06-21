@@ -32,8 +32,8 @@
 <div id=navigator>
     <div id=navigator2>
         
-        <div id=navigator_a>Menu</div>
-        <div id=navigator_b>Výstupy</div>
+        <div id=navigator_a><span class="c25"/>Menu</div>
+        <div id=navigator_b><span class="c25"/>Výstupy</div>
      <div class=menu0>
         <ul>
         <li><a href="<?php echo home_url(); ?>#o-projektu">O projektu</a></li> 

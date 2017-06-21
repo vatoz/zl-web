@@ -47,7 +47,7 @@ jQuery(document).ready(function(){
         href=jQuery(this).attr('href');
         console.log(href);
         if( isLocal(href)){
-           hideMenu(); 
+           
            loadTo(href,false);
             
            return false;            
