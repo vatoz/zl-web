@@ -43,7 +43,7 @@ function isLocal(href){
 }
 
 jQuery(document).ready(function(){
-   jQuery(".menu a").live('hover',function(e){       
+   jQuery(".menu a").live('click',function(e){       
         href=jQuery(this).attr('href');
         console.log(href);
         if( isLocal(href)){
