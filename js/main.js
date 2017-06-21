@@ -47,17 +47,25 @@ jQuery(document).ready(function(){
         href=jQuery(this).attr('href');
         console.log(href);
         if( isLocal(href)){
-            loadTo(href,false);
+           hideMenu(); 
+           loadTo(href,false);
+            
            return false;            
         }                   
     });
     
-     jQuery(".menu a").live('click',function(e){       
-        
-           return false;            
+     jQuery(".menu0 a").live('click',function(e){       
+           hideMenu(); 
+           return true;            
                            
     });
 });
+function hideMenu(){
+    jQuery(".menu0 ul,  ul.menu").css("display","none");
+    setTimeout(function()
+    {    jQuery(".menu0 ul, ul.menu").css("display","block");},200);
+}
+
 
 function Unfade(id){
     jQuery("#overlay_"+id).fadeTo(30,0,function(){
