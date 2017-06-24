@@ -61,7 +61,8 @@ jQuery(document).ready(function(){
            return false;            
         }
         }else{
-        return true;
+            document.location="http://ideal-zlin.cz/#"+jQuery(this).attr('href');
+        return false;
         
     } 
                           
