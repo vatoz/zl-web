@@ -1,5 +1,6 @@
 //Načte do pravého ČI LEVÉHO  bloku odkaz z lokálního webu, POKUD JE TO VPRAVO TAK PŘIDÁ TŘÍDU YELLOW
 function loadTo(href,left){
+    console.log("loadTo "+ href);
    jQuery.ajax({
     url: href,
     dataTyp:"html"  
@@ -52,6 +53,7 @@ jQuery(document).ready(function(){
             href=jQuery(this).attr('href');
         if( isLocal(href)){
            loadTo(href,false);
+           location.hash=href;
            return false;            
         }
         }else{
@@ -74,7 +76,10 @@ jQuery(document).ready(function(){
         jQuery("#content").css("width","99%");    
     }
 
-    
+    if(isLocal(location.hash.substr(1))){
+        console.log("islocal hash" + location.hash.substr(1));
+        loadTo(location.hash.substr(1), false);
+    }
     
 });
 
