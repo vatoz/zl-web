@@ -258,7 +258,7 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
 #sep_b{left: 50% ; }
 #sep_c{left:75% ; }
 a{color:black;}
-h2.rok{font-size:90px;margin-bottom:10px;margin-top:20px;text-align:left;}
+h2.rok{font-size:90px;margin-bottom:10px;margin-top:50px;text-align:left;}
 h2.rok:first-of-type{margin-top:0px;}
 
 #rightbox h1{display: none;}
