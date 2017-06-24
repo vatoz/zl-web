@@ -46,13 +46,19 @@ function isLocal(href){
 
 //po načtení dokumentu provede
 jQuery(document).ready(function(){
-   //pravé menu načte výstupy  
+   //pravé menu načte výstupy, ovšem pokud pravý blok neexistuje tak jen přejde na novou stránku  
    jQuery(".menu a").live('click',function(e){       
-        href=jQuery(this).attr('href');
+        if(jQuery("#rightbox").length>0){
+            href=jQuery(this).attr('href');
         if( isLocal(href)){
            loadTo(href,false);
            return false;            
-        }                   
+        }
+        }else{
+        return true;
+        
+    } 
+                          
     });
     
     //levé menu načte obsah a zmizí
@@ -60,6 +66,14 @@ jQuery(document).ready(function(){
            hideMenu(); 
            return true;                                       
     });
+    
+    if(jQuery("#rightbox").length>0){
+        //pravý blok existuje
+    }else{
+        //pravý blok neexistuje
+        jQuery("#content").css("width","99%");    
+    }
+
     
     
 });
