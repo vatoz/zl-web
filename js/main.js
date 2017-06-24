@@ -16,7 +16,11 @@ function loadTo(href,left){
         if(end>start){            
                 jQuery(target).html(result.substr(start+15, end-15-start   ));
                 if(!left){
-                  jQuery("#rightbox").addClass("yellow");
+                 
+                  jQuery("#rightbox").removeClass("yellow");
+                   setTimeout(function()
+                    { 
+                        jQuery("#rightbox").addClass("yellow");},10);
                 }            
         }else{
             return false;                  
@@ -67,6 +71,11 @@ jQuery(document).ready(function(){
     jQuery(".menu0 a").live('click',function(e){       
            hideMenu(); 
            return true;                                       
+    });
+    
+    //po najetí na obsah či hlavičku zmizí žlutá v pravé  části
+    jQuery("#content,#header").live('hover',function(e){      
+        jQuery("#rightbox").removeClass("yellow");                                      
     });
     
     if(jQuery("#rightbox").length>0){

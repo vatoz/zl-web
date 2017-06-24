@@ -220,7 +220,13 @@ display:block;margin-top:-150px;width:100%; z-index:-3;
 .front_more{color:black;text-decoration:none;}
 .paragraph_front_content p:first-child{margin-top:0px; }
 
-.yellow{background-color:#ffffbe;}
+@keyframes unyellow {
+    from {background-color: #ffffbe;}
+    to {background-color: rgba(0,0,0,0);}
+}
+.yellow{
+       animation-name:unyellow;
+}
 .imgcaption{color:grey;}
 
 
