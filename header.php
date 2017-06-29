@@ -8,7 +8,9 @@
 
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
 <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-
+<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri();?>/img/favicon.ico"/>
+<link rel="apple-touch-icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/apple-touch-icon.png">
+   
 <?php wp_enqueue_script( 'script', get_template_directory_uri() . '/js/main.js', array ( 'jquery' ), 1, true); ?>
 <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
 
