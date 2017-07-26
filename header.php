@@ -26,10 +26,11 @@
     
     ></a>                <!-- todo search and local menu
   
-                <a id=menu_icon onclick="ShowMenu()" href='#' ><div  id=nav_top ></div></a>
-		
+               
 		<a id=search_icon  href="<?php echo home_url(); ?>/" ><div  id=search_top ></div></a>
 		-->
+                 <a id=menu_icon onclick="ShowMobileMenu()" href='#' ><div  id=nav_top ></div></a>
+		
 </div>
 <div id=navigator>
     <div id=navigator2>
@@ -44,7 +45,7 @@
         <li><a href="<?php echo home_url(); ?>#odkazy">Odkazy</a></li>
         </ul>
         </div>
-        <?php wp_nav_menu(  ); ?>        
+        <?php wp_nav_menu(array("theme_location"=>"primary")  ); ?>        
     </div>
 </div>
 </div>

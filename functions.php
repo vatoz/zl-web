@@ -11,6 +11,7 @@ function zl_web_widgets_init() {
 		'after_title'   => '',
 	) );
         register_nav_menu("primary","Hlavní Zlín");
+        register_nav_menu("mobile","Mobile Zlín");
 
 }
 
@@ -31,7 +32,7 @@ function zl_web_logo($left){
     $side=($left?"left":"right");
     return '<DIV class=inlogo  id=logo_icon_'.$side.' href="'. home_url(). '" ><IMG src="'.get_template_directory_uri().'/img/logo_'.$side.'.png"
       id=logo_'.$side.' ></DIV>
-     <div id='.$side.'_down><img id='.$side.'_down_inner src="'.get_template_directory_uri().'/img/down.png"></div>';
+     <div id='.$side.'_down class=darr><img id='.$side.'_down_inner src="'.get_template_directory_uri().'/img/down.png"></div>';
     
 }
 function zl_web_logo_left(){

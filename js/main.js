@@ -41,6 +41,11 @@ function ShowMenu(){
     return false;
 }
 
+function ShowMobileMenu(){
+    jQuery("#menu-mobilni-menu").css("display","block");
+    return false;
+}
+
 //zjišťuje, zda je odkaz místní (pro ostrou, vývojovou a lokální verzi)
 function isLocal(href){
     if(href.indexOf("zlin.cz")>0) return true;
