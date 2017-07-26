@@ -220,6 +220,8 @@ img:hover {
 ::-webkit-scrollbar { 
     display: none; 
 }
+::-moz-scrollbars{display:none;}
+
 
 
 /*front*/
@@ -273,8 +275,11 @@ h2.rok:first-of-type{margin-top:20px;}
  .c25{margin-left:25px;}
  #menu_icon{opacity:.5;}
  #menu-mobilni-menu{display:none;}
+ 
+ 
  /*mobile*/
  @media only screen and (max-width:600px) {
+     
     #logo_top{ 
         display:none;
     }
@@ -298,3 +303,38 @@ h2.rok:first-of-type{margin-top:20px;}
     .todo{fade:remove;}
     
  }
+ 
+ 
+ 
+ /*firefox - ugly front hack - not for mobile*/
+ @-moz-document url-prefix() {
+     @media only screen and (min-width:600px){
+         #content, #rightbox{ 
+             overflow: hidden;
+         
+    
+   
+}
+#content2, #rightbox2{ 
+    overflow: auto;
+
+    /* Make sure the inner div is not larger than the container
+     * so that we have room to scroll.
+     */
+    max-height: 100%;
+
+    /* Pick an arbitrary margin/padding that should be bigger
+     * than the max width of all the scroll bars across
+     * the devices you are targeting.
+     * padding = -margin
+     */
+    margin-right: -25px;
+    padding-right: 25px;  
+}
+
+         
+#logo_right{left:0px;
+}
+.darr{margin-right:6px;}
+     } 
+}
