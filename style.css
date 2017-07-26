@@ -273,7 +273,7 @@ h2.rok:first-of-type{margin-top:20px;}
  h1:first-of-type{margin-top:22px;} 
  
  .c25{margin-left:25px;}
- #menu_icon{opacity:.5;}
+ #menu_icon{display:none;}
  #menu-mobilni-menu{display:none;}
  
  
